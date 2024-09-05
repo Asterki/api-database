@@ -17,7 +17,7 @@ app.use(dbRouter);
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, "../../client/dist")));
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
 	console.log("Server running on port", port);
 });
